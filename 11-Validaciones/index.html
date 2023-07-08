@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>validaciones</title>
+</head>
+
+<body>
+
+
+  <form action="post" action="/name">
+    <div>
+      <label for="name">Nombre:</label>
+      <input type="text" name="name" id="name" minlength="2" maxlength="20" required placeholder="insert coin">
+    </div>
+
+    <div>
+      <label for="age">edad:</label>
+      <input type="number" name="age" id="age" min="15" max="99" required>
+    </div>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <form action="post" action="/name">
+    <fieldset>
+      <legend>Datos Correo</legend>
+      <label for="email">correo</label>
+      <input type="email" name="email" id="email">
+    </fieldset>
+
+    <fieldset>
+      <legend>Datos user</legend>
+      <label for="name-user">correo</label>
+      <input type="text" name="name-user" id="name-user" required pattern="[A-Za-z1-9]+">
+    </fieldset>
+    <fieldset>
+      <label for="car">audi</label>
+      <input type="text" name="car" id="car" required title="modelos disponibles: A1, A4, A5, A7,"
+        pattern="A|a(1|4|5|7)">
+    </fieldset>
+  </form>
+
+
+</body>
+
+</html>
